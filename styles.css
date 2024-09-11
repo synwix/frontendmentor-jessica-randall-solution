@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  /* line-height: 1;
+  font-weight: 400;
+  color: #555; */
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  /* overflow-x: hidden; */
+}
+.card-main {
+  width: 40rem;
+  margin: 10rem auto;
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 1rem; */
+  /* text-align: center; */
+  margin-top: 4rem;
+}
+.name {
+  /* margin: 10rem 10rem 10rem 10rem; */
+  font-size: 2.6rem;
+  margin: 3rem 0 0.8rem 0;
+  /* text-align: center; */
+}
+
+.profile-picture {
+  width: 15rem;
+  border-radius: 1000px;
+}
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 4rem;
+}
+.button {
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  font: inherit;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 4rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+.button:active {
+  background-color: hsl(75, 71%, 31%);
+  color: hsl(0, 0%, 20%);
+}
+.button:focus {
+  /* border-radius: 10px; */
+  outline: none;
+  box-shadow: inset 0 0 0 2px hsl(75, 71%, 31%);
+}
+.quote {
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+@media (min-width: 600px) {
+  .button {
+    font-size: 1.2rem; /* Increase font size on larger screens */
+    padding: 1rem 2rem; /* Adjust padding on larger screens */
+    max-width: none; /* Remove max-width restriction */
+  }
+}
