@@ -91,8 +91,27 @@ body {
 }
 @media (min-width: 600px) {
   .button {
-    font-size: 1.2rem; /* Increase font size on larger screens */
-    padding: 1rem 2rem; /* Adjust padding on larger screens */
-    max-width: none; /* Remove max-width restriction */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    max-width: none;
   }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 80%);
+  margin: 2rem 0;
+}
+
+.attribution-link {
+  color: hsl(220, 80%, 60%);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.attribution-link:hover {
+  color: hsl(220, 80%, 70%);
+  text-decoration: underline;
 }
